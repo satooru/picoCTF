@@ -1,0 +1,19 @@
+opening this page (https://jupiter.challenges.picoctf.org/problem/60915/) greet us with a html with a title 'Welcome' and a paragraph 'Where are the robots?'
+
+I opened the console, checked the source page, network calls and found nothing.
+
+Then I tried to google it myself, and to my surprise I found out about robots.txt.
+
+I learned that a file called robots.txt lists all the links the search engine should not list on search queries. neat.
+
+By listing certain pages on robots.txt, you can in a way expose some important pages like in this ctf.
+
+Accessing the page (https://jupiter.challenges.picoctf.org/problem/60915/robots.txt), it gives me the following content:
+
+User-agent: *
+Disallow: /8028f.html
+
+Then I tried to access the /8028f.html page and there is the code	
+
+Guess you found the robots
+picoCTF{ca1cu1at1ng_Mach1n3s_8028f}
