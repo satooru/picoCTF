@@ -1,0 +1,11 @@
+After I downloaded the file, I tried to open it on the ubuntu text editor, and to my surprise it crashed LOL
+
+Then I tried to see what would happen if I cat this file and it outputs too much stuff and some understandable stuff here and there
+
+So I ran a hexdump on the file (out is the output from hexdump -C) and searched for 'pico'.
+
+Another cool thing is that in the beggining of the hexdump, there is a hint
+"Maybe try the 'strings' function? Take a look at the man page"
+
+then I also ran 'strings strings | grep pico' and it gave me the following output
+picoCTF{5tRIng5_1T_d66c7bb7}
