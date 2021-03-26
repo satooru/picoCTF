@@ -1,0 +1,7 @@
+I used 'man nc' then understood that nc can read from a port on a target computer.
+
+looking at the command usage I tried using 'nc jupiter.challenges.picoctf.org 25103'
+
+then it output this:
+You're on your way to becoming the net cat master
+picoCTF{nEtCat_Mast3ry_d0c64587}'
