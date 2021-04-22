@@ -1,0 +1,14 @@
+ssh <level>@leviathan.labs.overthewire.org -p 2223
+
+where <level> leviathan0, leviathan1, leviathan2, so forth...
+
+PASSWORDS:
+leviathan0  - leviathan0
+leviathan1  - rioGegei8m 
+leviathan2  - ougahZi8Ta 
+leviathan3  - 
+leviathan4  - 
+leviathan5  - 
+leviathan6  - 
+leviathan7  - 
+leviathan8  - 
