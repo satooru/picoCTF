@@ -1,0 +1,16 @@
+first thing I tried was to use 'file warm' then I identified the file as an executable
+
+tried to run './warm' and it said permission denied
+
+then I tried 'ls -la' to check its permissions and saw that it wasn't executable
+
+then I wan 'chmod 777 warm' altering its permissions but still was unable to run it. it always outputs 'zsh: exec format error: ./warm'
+maybe that's cause I`m not running linux
+
+using picoCTF's web shell environment, I was able to run by replicating the same commands listed in this .txt
+
+by running './warm' it gave me 'Hello user! Pass me a -h to learn what I can do!'
+then I ran `./warm -h` giving me the following
+
+'Oh, help? I actually don't do much, but I do have this flag here: picoCTF{b1scu1ts_4nd_gr4vy_30e77291}'
+
