@@ -1,0 +1,26 @@
+ I tried opening the jpeg as an image, it displayed a cat.
+ running 'file cat.jpeg' gave me nothing interesting
+
+ then I ran 'xxd cat.jpeg' and at the beginning there was some mentions at PicoCTF.
+ so I ran 'head cat.jpeg' and it gave me this:
+
+ ����JFIF��0Photoshop 3.08BIMtPicoCTF��
+                                      �http://ns.adobe.com/xap/1.0/<?xpacket begin='' id='W5M0MpCehiHzreSzNTczkc9d'?>
+<x:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='Image::ExifTool 10.80'>
+<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+
+ <rdf:Description rdf:about=''
+  xmlns:cc='http://creativecommons.org/ns#'>
+  <cc:license rdf:resource='cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9'/>
+ </rdf:Description>
+
+ <rdf:Description rdf:about=''
+
+ I tried using both the id and resource as flags and wasn't successful
+
+ so I googled about rdf and cc but they led me to nothing, so I just googled what I was supposed to do and it turns out I was supposed to decode the resource as base64.
+
+ so decoding it gives me picoCTF{the_m3tadata_1s_modified}
+
+ I guess if I haven't googled it, probably wouldn't have guessed it myself.
+ maybe I should approach other challenges using base64 as an alternative/option
