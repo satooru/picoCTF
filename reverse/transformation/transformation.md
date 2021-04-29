@@ -6,6 +6,7 @@ Transformation
 
 ### Description
 I wonder what this really is... enc ''.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)])
+
 enc:
 ```
 灩捯䍔䙻ㄶ形楴獟楮獴㌴摟潦弸弰摤捤㤷慽
@@ -35,8 +36,16 @@ this thing looks like python code to me
 ''.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)])
 ```
 
-sorting this code it becomes this:
+there is something bothering me, I have no idea what this means in python
 ```python
-for i in range(0, len(flag), 2)]):
-    ''.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1]))
+<<
 ```
+
+it turns out it's a shift left operation
+
+I tried to understand how the script works and kinda encoded once more. I am lost LOL no idea what to do.
+
+googled it a little bit and I realized I was waaaaay off and wouldn't have guessed it. It turns out that python code what enconding the flag.
+
+So I should reverse engineer it (which I didn't realize sooner, ouch)
+
